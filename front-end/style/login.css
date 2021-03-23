@@ -1,0 +1,101 @@
+body{
+	background: linear-gradient(to right, #FFFFFF, #551A8B);
+}
+
+h5{
+	text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 2rem;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+
+
+.options{
+	margin-top: 0.5rem;
+
+	font-family: arial;
+}
+
+
+#forg{
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	margin-top: -1rem
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10rem;
+
+	width: 20rem;
+	height: auto;
+	padding: 0.4rem;
+	border: none;
+	background-color: white;
+	border-radius: 0.7rem
+	box-shadow: 10px 10px gray;
+
+}
+
+.input{
+	width: 15rem;
+	height: 2rem;
+	border-radius: 0.8rem;
+	border: none;
+	background-color:#CFCFCF;
+	margin-bottom: 0.5rem;
+	margin-left: 2.5rem;
+	text-align: center;
+
+}
+
+.btn{
+	margin-left: 0.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	height: 2.5rem;
+	width: 30%;
+	font-family: arial;
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+	text-align: center;
+	background-color: white;
+}
+
+.text{
+	margin-left: 0.5rem;
+}
+
+#login{
+	background-color: #BFEFFF;
+	color: black;
+	width: 95%;
+}
+
+
+img{
+	width: 2rem;
+	margin-top: 0.2rem;
+}
+
+p{
+	text-align: center;
+}
+
+#local{
+	width: 10rem;
+	position: absolute;
+	left: 60rem;
+	top: 20rem;
+	transform: rotate(30deg);
+}
+
+#person{
+	position: absolute;
+	width: 20rem;
+	top: 5rem;
+	left: 5rem;
+}
