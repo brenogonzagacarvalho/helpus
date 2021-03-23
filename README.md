@@ -1,9 +1,7 @@
-# helpus
-HelpUs
+# HelpUS
 
-dev dependencies
 
- - npm install 
+ # Node Dependencies 
  -     express 
  -     mongoose 
  -     nodemon 
