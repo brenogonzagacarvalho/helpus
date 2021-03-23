@@ -1,6 +1,6 @@
 # helpus
 HelpUs
 
-devDepencias 
+dev dependencies
 
-npm install express mongoose nodemon bcryptjs -D
+ - npm install express mongoose nodemon bcryptjs -D
