@@ -1,6 +1,8 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
+const mailer = require('../../modules/mailer');
 
 const authConfig = require('../../config/authConfig.json')
 const User = require('../models/User');
@@ -50,10 +52,59 @@ router.post('/authenticate', async(req, res) => {
         expiresIn: 86400,
     } );
 
-    res.send({ 
-        user, 
-        token : generateToken ({id: user.id }),
+    res.send({user, token : generateToken ({id: user.id })
     });
 });
 
+router.post('/forgot_password', async(req, res) => {
+    const { email } = req.body;
+      
+    try {
+        const user = await User.findOne({email})
+      
+        if(!user)
+            return res.status(400).send({ error: 'usuario nao encontrado' });
+        const token = crypto.randomBytes(20).toString('hex');
+
+        const now = new Date();
+        now.setHours(now.getHours() + 1);
+        
+        await User.findByIdAndUpdate(user.id,{
+            '$set':{
+                passwordResetToken: token,
+                passwordResetExpiress: now,
+            }
+        });
+        res.send({token,now});        
+    }catch(err){
+        res.status(400).send({error: "Erro ao recuperar a senha, tente novamente"})
+    }
+});
+router.post('/reset_password', async(req, res) => {
+    const { email, token, password } = req.body;
+    
+    try {
+        const user = await User.findOne({ email })
+        .select('+passwordResetToken passwordResetExpires');
+
+        if(!user)
+        return res.status(400).send({ error: 'usuario nao encontrado' });
+
+        if(token!== user.passwordResetToken)
+            return res.status(400).send({error: 'token invalido para recuperação'})
+        
+        const now = new Date();
+        
+        if(now > user.passwordResetExpiress)
+            return res.status(400).send({error: 'token expirado, solicite outro novamente'})
+    
+        user.password = password;
+        await user.save();
+        res.send('senha alterada com sucesso!');
+
+    }catch(err){
+        res.status(400).send({error: "Erro ao recuperar a senha, tente novamente"})
+    }
+
+});
 module.exports = app => app.use('/auth', router);
