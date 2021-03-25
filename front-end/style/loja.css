@@ -1,0 +1,94 @@
+.navbar{
+	margin-left: -0.5%;
+	margin-top: -1%;
+	width: 100.8%;
+	height: 5rem;
+	background-color: #87CEFA;
+}
+
+#logo{
+	margin-left: 2rem;
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-family: arial;
+	font-weight: bold;
+}
+
+#info{
+	display: flex;
+	width: auto;
+	height: auto;
+	margin-left: 84%;
+	margin-top: -4rem;
+	background-color: ;
+}
+
+#info a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin-top: 0.2rem;
+	color: white;
+}
+
+#sair{
+	margin-left: -0.5rem;
+}
+
+.img{
+	width: 20.09rem;
+	height: 29.8rem;
+	margin-left: -0.5%;
+
+}
+
+#back{
+	width: 420%; 
+	height: 36.3rem;
+	margin: auto;
+}
+
+#content{
+	position: absolute;
+	width: 60rem;
+	margin-left: 10rem;
+	margin-top: -27rem;
+}
+
+button{
+	width: 15rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	border-radius: 5rem;
+	border: none;
+	background-color: gray;
+	opacity: 0.95;
+	color: white;
+	font-weight: bold;
+}
+
+#cad:hover{
+	background-color: blue;
+	box-shadow: 0.1rem 0.3rem gray;
+	transition: 0.3s;
+}
+#prom:hover{
+	background-color: gold;
+	box-shadow: 0.1rem 0.3rem gray;
+	transition: 0.3s;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: white;
+}
+
