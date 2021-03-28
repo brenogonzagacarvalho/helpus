@@ -13,8 +13,6 @@ npm start
 ```
 
 Abraço..!
-
-
-![alt text](https://drive.google.com/file/d/1hLkRIFj6wQorEIvLCGm0IfQWRuIkNaCa/view?usp=sharing)
-![alt_text](https://drive.google.com/file/d/1RMaKPddKr-Mcwl_jmxD39m70CHpKjVq6/view?usp=sharing)
-![alt_text](https://drive.google.com/file/d/1mvymY3JqT-b9kVicsEEZ1rKXy-iKzxf5/view?usp=sharing)
+![](assets/img/telaaEDITARfilmes.png)
+![](assets/img/telaaddfilmes.png)
+![](assets/img/telaaddfilmes1.png)
