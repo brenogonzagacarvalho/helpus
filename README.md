@@ -14,9 +14,9 @@ npm start
 
 Abraço..!
 
-#### Tela Inicial
+#### Tela Listar/Deletar - Filmes/Series
 ![](assets/img/telaaddfilmes.png)
-#### Tela Add Filme/Serie
-![](assets/img/telaaEDITARfilmes.png)
-#### Tela Editar/Deletar Filme/Serie
+#### Tela Adicionar
 ![](assets/img/telaaddfilmes1.png)
+#### Tela Editar Filme/Serie
+![](assets/img/telaaEDITARfilmes.png)
