@@ -13,6 +13,10 @@ npm start
 ```
 
 Abraço..!
-![](assets/img/telaaEDITARfilmes.png)
+
+#### Tela Inicial
 ![](assets/img/telaaddfilmes.png)
+#### Tela Add Filme/Serie
+![](assets/img/telaaEDITARfilmes.png)
+#### Tela Editar/Deletar Filme/Serie
 ![](assets/img/telaaddfilmes1.png)
