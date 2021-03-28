@@ -1,0 +1,237 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('../img/back7.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.nav-title{
+    width: 30%;
+    background: red;
+    padding: 16px 40px;
+    text-align: center;
+
+}
+
+.nav-menu{
+    width: 70%;
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul li{
+    padding: 10px 20px;
+    color: #ccc;
+    font-size: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-menu ul li:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
+/*style for responsive menu*/
+
+@media screen and (max-width:1000px){
+   .nav{
+       height: auto;
+   }
+   .nav .nav-title{
+       text-align: left;
+       width: 100%;
+   }
+
+   .nav .nav-menu{
+       width: 100%;
+   }
+   .nav .nav-menu ul{
+       justify-content: space-around;
+   }
+
+   .nav .nav-menu ul li{
+       width: 20%;
+       padding: 10px 0px;
+       text-align: center;
+       font-size: 16px;
+   }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oxygen);
+
+/* Page layout */
+
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.3em;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    padding: 10px 0 0 30px;
+    letter-spacing: 2px;
+}
+
+h2 { margin: 20px 0 10px 0;
+    font-weight: 900;
+}
+
+p {
+    margin: 20px 0 5px 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Table Layout */
+
+table.series {
+    margin: 10px 0 0 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #212121;
+    color: #fff;
+    width: 40%;
+}
+
+table.series button{
+    width: 110%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+table.series .remover{
+    background-color: brown;
+    margin-bottom: 10%;
+}
+
+table.series .editar{
+    background-color: orange;
+}
+
+table.series th, table.series td {
+    text-align: center;
+}
+
+table.series thead {
+    line-height: 12px;
+    background: red;
+    text-transform: uppercase;
+}
+
+table.series thead th {
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+}
+
+table.series thead th:nth-child(1) {
+    width: 20%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+table.series thead th:nth-child(2) {
+    width: 30%;
+}
+
+table.series thead th:nth-child(3) {
+    width: 35%;
+}
+
+table.series thead th:nth-child(4) {
+    width: 15%;
+}
+
+table.series tbody {
+    font-size: 1em;
+    line-height: 15px;
+}
+
+table.series tbody tr {
+    border-top: 2px solid rgba(206, 26, 56, 0.8);
+    transition: background 0.6s, color 0.6s;
+}
+
+table.series tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+table.series tbody tr:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+}
+
+table.series tbody td {
+    padding: 12px;
+}
+
+table.series tbody tr:hover td:first-child {
+    background: rgba(0,0,0,0);
+}
+
+table.series tbody td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700;
+    background: rgba(211, 42, 93, 0.35);
+    transition: backgrounf 0.6s;
+}
+
+
+/* Mobile Layout */
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 34px;
+        line-height: 36px;
+        padding-left: 15px;
+    }
+
+    article {
+        margin: 10px 15px;
+    }
+
+    table.series {
+        font-size: 0.8em;
+    }
+}
+
