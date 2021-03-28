@@ -1,0 +1,17 @@
+<% for(var i = 0; i < movies.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= movies[i].name %></td>
+    <td><%= movies[i].time %></td>
+    <td><%= movies[i].gender %></td>
+    <td><%= movies[i].status %></td>
+    <td>
+        <a href="/update-movie?id=<%= movies[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= movies[i]._id%> >
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>

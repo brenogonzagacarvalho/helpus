@@ -1,41 +1,26 @@
 {
-  "name": "helpus",
+  "name": "crud_app",
   "version": "1.0.0",
-  "description": "HelpUs",
-  "main": "index.js",
+  "description": "crud application with express and mongodb",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon back-end/src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brenogonzagacarvalho/helpus.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "crud",
+    "mongodb"
+  ],
+  "author": "akshay kashyap",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brenogonzagacarvalho/helpus/issues"
-  },
-  "homepage": "https://github.com/brenogonzagacarvalho/helpus#readme",
-  "devDependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.12.1",
-    "nodemon": "^2.0.7"
-  },
   "dependencies": {
-    "axios": "^0.21.1",
-    "bcryptjs": "^2.4.3",
+    "axios": "^0.21.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.6",
-    "fs": "^0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.5.0",
-    "nodemailer-express-handlebars": "^4.0.0",
-    "path": "^0.12.7",
-    "react-app": "^1.1.2"
+    "nodemon": "^2.0.6"
   }
 }

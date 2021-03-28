@@ -1,0 +1,55 @@
+ <!-- form handling -->
+ <form action="/api/movies" method="POST" id="add_movie">
+    <div class="new_movie">
+        <div class="form-group">
+            <label for="name" class="text-light">Nome</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" required>
+            
+        </div>
+        <div class="form-group">
+            <label for="Time" class="text-light">Duração</label>
+            <input type="text" name="time" value="" required>
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Genero</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Action" required>
+                <label for="radio-2" class="radio-label">Action</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Comedy" required>
+                <label for="radio-3" class="radio-label">Comedy</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="gender" value="Terror" required>
+                <label for="radio-4" class="radio-label">Terror</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="gender" value="Documentary" required>
+                <label for="radio-5" class="radio-label">Documentary</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-6" name="status" value="Watched" required>
+                <label for="radio-6" class="radio-label">Watched</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-7" name="status" value="Watching" required>
+                <label for="radio-7" class="radio-label">Watching</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-8" name="status" value="Not-watched" required>
+                <label for="radio-8" class="radio-label">Not watched</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
