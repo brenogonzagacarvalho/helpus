@@ -1,5 +1,5 @@
 # YouMovie
-Neste projeto ,criaremos um CRUD com Node/express e mongodb.
+Neste projeto criaremos um CRUD com Node/express e mongodb.
 
 #### Para Rodar esse projeto:
 ```
